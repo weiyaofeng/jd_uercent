@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> 用户中心 — 京东 </title>
+  <meta charset="utf-8">
+	<link rel="icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="jd.css">
+ </head>
+ <body>
+ <div class="header"></div>
+ <div class="main">
+	<div class="left">
+		<h3>我的京东</h3>
+		<ul class="affix">
+			<li class="active"><a data-toggle="affix-item" href="#my-order">我的订单</a></li>
+			<li><a data-toggle="affix-item" href="#buy-stat">消费统计</a></li>
+			<li><a data-toggle="affix-item" href="#luck-lottery">幸运抽奖</a></li>
+		</ul>
+	</div>
+	<div class="right">
+		<div id="my-order" class="container active">
+			<table id="order-table">
+				<thead>
+					<tr>
+						<th>订单信息</th>
+						<th>收货人</th>
+						<th>订单金额</th>
+						<th>
+							<select name="" id="">
+								<option value="m1">最近1个月</option>
+								<option value="m3">最近3个月</option>
+								<option value="m6">最近6个月</option>
+							</select>
+						</th>
+						<th>
+							<select name="" id="">
+								<option value="0">全部状态</option>
+								<option value="1">等待付款</option>
+								<option value="2">派货中</option>
+								<option value="3">运输中</option>
+								<option value="4">订单完成</option>
+								<option value="5">订单无效</option>
+							</select>
+						</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!--<tr>
+						<td colspan="6" style="text-align: left">
+							订单编号：2364723647
+							<a href="#">BROWNE FOX旗舰店</a>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align: left">
+							<a href="#"><img src="img/prod1.jpg" alt=""></a>
+							<a href="#"><img src="img/prod2.jpg" alt=""></a>
+						</td>
+						<td>强东</td>
+						<td>￥35.5<br>在线支付</td>
+						<td>2015-10-25<br>10:25:33</td>
+						<td>等待收货</td>
+						<td>
+							<a href="#">查看</a><br>
+							<a href="#">确认收货</a><br>
+							<a href="#">取消订单</a>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align: left" colspan="6">
+							订单编号：2364723647
+							<a href="#">京东自营</a>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align: left">
+							<a href="#"><img src="img/prod3.jpg" alt=""></a>
+						</td>
+						<td>强东</td>
+						<td>￥35.5<br>在线支付</td>
+						<td>2015-10-25<br>10:25:33</td>
+						<td>等待收货</td>
+						<td>
+							<a href="#">查看</a><br>
+							<a href="#">确认收货</a><br>
+							<a href="#">取消订单</a>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align: left" colspan="6">
+							订单编号：2364723647
+							<a href="#">京东自营</a>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align: left">
+							<a href="#"><img src="img/prod4.jpg" alt=""></a>
+							<a href="#"><img src="img/prod5.jpg" alt=""></a>
+						</td>
+						<td>强东</td>
+						<td>￥35.5<br>在线支付</td>
+						<td>2015-10-25<br>10:25:33</td>
+						<td>等待收货</td>
+						<td>
+							<a href="#">查看</a><br>
+							<a href="#">确认收货</a><br>
+							<a href="#">取消订单</a>
+						</td>
+					</tr>-->
+				</tbody>
+			</table>
+
+			<ul class="pager">
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li class="active"><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">6</a></li>
+			</ul>
+		
+		</div>	
+		<div id="buy-stat" class="container">消费统计</div>	
+		<div id="luck-lottery" class="container">
+			<button id="bt-lottery" type="button" disabled>
+				开始抽奖(剩余抽奖次数:0次)
+			</button>
+		</div>	
+	</div>
+ </div>
+ <div class="footer"></div>
+
+ <!--固定定位的模态框——用户登录-->
+ <div class="modal">		<!--半透明遮罩层-->
+	<div class="modal-dialog">		<!--宽度/定位-->
+		<div class="modal-content">  <!--背景色/边框/倒角/阴影-->
+			<h3>用户登录</h3>
+			<div class="alert">
+				<p>请保管好您的注册信息，以防丢失。</p>
+			</div>
+			<form id="login-form">
+				<input type="text" name="uname" placeholder="请输入您的注册名" value="强东">
+				<input type="password" name="upwd" placeholder="请输入您的密码" value="123456">
+				<input class="submit" type="button" value="提交注册信息">
+			</form>
+		</div>
+	</div>
+ </div>
+ <script src="js/jquery-1.11.3.js"></script>
+ <script src="js/jd.js"></script>
+ </body>
+</html>
